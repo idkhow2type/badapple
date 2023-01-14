@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function setFavicon(href) {
+                const prev = document.querySelector('#favicon');
+                if (prev) document.head.removeChild(prev);
+                const newPrev = document.createElement('link');
+                newPrev.rel = 'shortcut icon';
+                newPrev.href = href;
+                newPrev.type = 'image/x-icon';
+                newPrev.id = 'favicon'
+                document.head.appendChild(newPrev);
+            }
+
+            let frame = 1;
+            const interval = setInterval(() => {
+                const frameName =
+                    './frames/frame' + String(frame).padStart(4, 0) + '.png';
+                setFavicon(frameName);
+                if (frame >= 1095) clearInterval(interval);
+                frame++;
+            }, 1000 / 5);
+        </script>
+    </body>
+</html>
