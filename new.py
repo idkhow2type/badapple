@@ -46,6 +46,4 @@ with open(f"{args.name}/config.json", "w") as f:
 to_frame(args.name, config)
 
 if args.template:
-    with open(f'{args.name}/main.py','w') as f:
-        f.write("""
-        """)
+    shutil.copyfile('template.py',f'{args.name}/main.py')
