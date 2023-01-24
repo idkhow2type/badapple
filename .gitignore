@@ -1,5 +1,7 @@
-# ignore
+# delete
 frames
+
+# ignore
 __pycache__
 GUIDE.md
 

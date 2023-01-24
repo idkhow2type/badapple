@@ -1,9 +1,10 @@
 # Bad Apple!!
 Bad Apple!! is considered by some as the "graphical version of 'hello world'". It's a challenge to use platforms not meant for dispaying computer graphics to play the MV Bad Apple!!
 
-This repository is a collection of all the Bad Apple!! projects I've made. There are 2 files used for setting up projects
+This repository is a collection of all the Bad Apple!! projects I've made. There are some files used for setting up projects and the repo
 - `new.py` used for setting up a new template folder (run `py new.py -h` for more info)
 - `toframe.py` used for creating a folder of individual frames of the Bad Apple!! video (totally not because I can never remember how to use ffmpeg)
+- `clean.py` used to delete generated files marked in `.gitignore` files
 
 ## General process for running
 1. In this directory, run
