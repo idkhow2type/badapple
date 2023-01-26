@@ -6,7 +6,8 @@ A Python program that creates a Minecraft datapack that plays Bad Apple in real-
 
 To use this project, go into `config.json` and change the settings
 
--   `"width"`, `"height"` and `"fps"`: quite literal
+-   `"width"`, `"height"` and `"fps"`: quite literal<br>
+    <sub>Note: for this project, width and height should be equal and be a power of 2</sub>
 
 -   `"cutoff"`: the maximum number of frames stored in a `.mcfunction` file. Shouldn't be set too big or the file won't be loaded into the game
 
