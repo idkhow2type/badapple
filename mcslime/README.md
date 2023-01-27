@@ -29,7 +29,7 @@ and wait for it to finish
 Then, copy the `badappleslime` folder into the `datapacks` folder of your Minecraft world
 Open the world, run the command
 
-```mcfunction
+```
 /execute positioned <x> <y> <z> run function badappleslime:play
 ```
 
